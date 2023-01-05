@@ -27,7 +27,9 @@
             age: 25,
             nationality: "INDIA"
         },
-        ]
+        ],
+        
+        
     },
     {
         id: 3,
@@ -60,7 +62,39 @@
         nationality: "CHINA"
     },
 ];
+const MovieList = [
+{
+id: 1,
+name: "My Neighbor Totoro",
+yearOfPublication: 1988,
+isInTheatres: true,
+},
+{
+id: 2,
+name: "Kikis Delivery Service",
+yearOfPublication: 1989,
+isInTheatres: true,
+},
+{
+id: 3,
+name: "Howls Moving Castle",
+yearOfPublication: 1988,
+isInTheatres: false,
+},
+{
+id: 4,
+name: "Ponyo",
+yearOfPublication: 2008,
+isInTheatres: true,
+},
+{
+id: 5,
+name: "Spirited Away",
+yearOfPublication: 2001,
+isInTheatres: false,
+},
+];
 
 
 
-module.exports = {UserList};
+module.exports = {UserList, MovieList};
