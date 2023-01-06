@@ -20,7 +20,7 @@ const typeDefs = gql`
     }
 
     type Query { #allows us to query users and movies
-        users: [User!]!
+        users: UsersResult #a union can be created between a successful return type and an error SO we can do error handling
         user(id: ID!): User!
         movies: [Movie!]!
         movie(name: String!): Movie!
@@ -54,6 +54,18 @@ const typeDefs = gql`
         CANADA
         CHINA
         INDIA
+        VIETNAM
     }
+
+    # MUST BE SET EQUAL TO A TYPE
+    type UsersSuccessfulResult {
+        users: [User!]!
+    }
+
+    type UsersErrorResult{
+        message: String!
+    }
+
+    union UsersResult = UsersSuccessfulResult | UsersErrorResult
 `;
 module.exports = {typeDefs};
