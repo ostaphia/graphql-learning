@@ -13,7 +13,7 @@ function App() {
   return (
     <ApolloProvider client = {client}>
     <div className="App">
-     Hello bitch
+     Hello World!
      <h1> List of Users </h1>
      <DisplayData />
     </div>
