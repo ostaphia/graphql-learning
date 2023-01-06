@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useQuery, useLazyQuery,useMutation, gql} from '@apollo/client';
 //useLazyQuery: we only want to fetch the data when we want it to fetch
 
+
+//TODO: query needs updated since it has error handling
 const QUERY_ALL_USERS = gql`
 query GetAllUsers{
   users{
